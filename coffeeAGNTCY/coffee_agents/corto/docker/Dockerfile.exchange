@@ -1,5 +1,5 @@
 # `coffeeAGNTCY/coffee_agents/corto/docker/Dockerfile.exchange`
-FROM python:3.13.0-slim
+FROM quay.io/fedora/python-313
 
 # Build arguments for metadata
 ARG BUILD_VERSION=unknown
