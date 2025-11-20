@@ -15,5 +15,5 @@ WORKDIR /app
 COPY ../pyproject.toml ../uv.lock ./
 RUN uv sync --locked --no-editable
 
-COPY coffeeAGNTCY/coffee_agents/corto/ .
+COPY ../ .
 CMD ["uv", "run", "python", "farm/farm_server.py"]
