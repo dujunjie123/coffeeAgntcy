@@ -12,6 +12,7 @@ RUN pip install --no-cache-dir uv && \
 ENV PATH="/venv/bin:$PATH"
 
 WORKDIR /app
+RUN echo "=== 当前工作目录（/app）的内容 ===" && ls -l
 COPY ../../pyproject.toml ./
 COPY ../../uv.lock ./
 RUN uv sync --locked --no-editable
